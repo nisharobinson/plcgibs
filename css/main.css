@@ -1,0 +1,92 @@
+/******************
+** Vertical Menu **
+******************/
+.vert-menu {
+	display: inline-block;
+	vertical-align: top;
+	padding: 0em 1em 1em 0em;
+}
+.vert-menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background: #ffffff;
+	display: inline-block;
+}
+.vert-menu ul a {
+	background: #ffffff;
+	color: #000000;
+	border: 1px solid grey;
+	padding: 0.5em 1em;
+	margin: -1px;
+	display: block;
+	text-decoration: none;
+	outline: 0;
+}
+.vert-menu ul a:hover {
+	background: #0100A4;
+	color: #ffffff;
+}
+
+/* Level 1 Drop Down Menu */
+.vert-menu ul > li {
+	display: block;
+	position: relative;
+}
+.vert-menu ul > li > a {}
+.vert-menu ul > li > a:hover {}
+
+/* Level 2 */
+.vert-menu ul > li > ul {
+	background: #ffffff;
+	color: #ffffff;
+	width: auto;
+	margin: 1px;
+	display: none;
+	position: absolute;
+	left: 100%;
+	top: 0;
+	z-index: 9999999;
+}
+.vert-menu ul > li:hover > ul {
+	display: block;
+}
+.vert-menu ul ul li a {}
+.vert-menu ul ul li a:hover {}
+
+/* Level 3 */
+.vert-menu ul > li > ul > li > ul {
+	background: #ffffff;
+	color: #ffffff;
+	width: auto;
+	margin: 1px;
+	display: none;
+	position: absolute;
+	left: 100%;
+	top: 0;
+	z-index: 9999999;
+}
+.vert-menu ul > li > ul > li:hover > ul {
+	display: block;
+}
+.vert-menu ul ul ul li {}
+.vert-menu ul ul ul li a {}
+.vert-menu ul ul ul li a:hover {}
+
+/************
+** Content **
+************/
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	background-color: #3da2a2;
+}
+
+.content {
+	padding: 1em;
+	display: inline-block;
+	background-color: #ffffff;
+	border: 1px solid grey;
+	margin: -1px;
+}
+
